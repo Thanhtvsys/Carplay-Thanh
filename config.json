@@ -1,0 +1,12 @@
+{
+  "db": {
+    "user": "invidious",
+    "password": "invidious",
+    "host": "localhost",
+    "port": 5432,
+    "dbname": "invidious"
+  },
+  "domain": "localhost",
+  "http_proxy": "",
+  "hmac_key": "Thanh@12042015"
+}
