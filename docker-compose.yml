@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - INVIDIOUS_CONFIG={"db":{"user":"invidious","password":"invidious","host":"postgres","dbname":"invidious"},"domain":"localhost","http_proxy":""}
+    restart: always
