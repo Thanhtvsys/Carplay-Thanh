@@ -6,5 +6,5 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - INVIDIOUS_CONFIG={"db":{"user":"invidious","password":"invidious","host":"postgres","dbname":"invidious"},"domain":"localhost","http_proxy":""}
+      - INVIDIOUS_CONFIG={"db":{"user":"invidious","password":"invidious","host":"postgres","dbname":"invidious"},"domain":"localhost","http_proxy":"","hmac_key":"Thanh@12042015"}
     restart: always
