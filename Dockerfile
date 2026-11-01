@@ -1,6 +1,7 @@
 FROM quay.io/invidious/invidious:latest
 
-# Tạo thư mục cấu hình và tự sinh file config.yml bên trong container
+# Chuyển sang quyền root để tạo thư mục và ghi file cấu hình
+USER root
 RUN mkdir -p /config
 RUN echo 'db:' > /config/config.yml && \
     echo '  user: "invidious"' >> /config/config.yml && \
